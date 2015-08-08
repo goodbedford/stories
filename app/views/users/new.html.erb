@@ -1,17 +1,17 @@
 <h1>Create New User</h1>
 
 <%= form_for @user do |f| %>
-  <%= f.lable :first_name %>:
+  <%= f.label :first_name %>:
   <%= f.text_field :first_name %><br>
 
-  <%= f.lable :last_name %>:
+  <%= f.label :last_name %>:
   <%= f.text_field :last_name %><br>
 
-  <%= f.lable :email %>:
+  <%= f.label :email %>:
   <%= f.text_field :email %><br>
 
-  <%= f.lable :password %>:
+  <%= f.label :password %>:
   <%= f.text_field :password %><br>
 
-  <%= f.submit %>
+  <%= f.submit "Submit"%>
 <% end %>
