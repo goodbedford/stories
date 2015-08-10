@@ -1,0 +1,10 @@
+
+
+<div>
+ First Name: <%= @current_user.first_name %><br>
+ Last Name: <%= @current_user.last_name %><br>
+ <%= link_to "edit", "/users/#{@current_user.id}/edit" %>
+
+  <%= button_to "delete", "/users/#{@current_user.id}", method: :delete%>
+
+ </div>

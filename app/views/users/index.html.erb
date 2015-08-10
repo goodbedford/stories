@@ -1,7 +1,13 @@
 <h1>Sign Up</h1>
 <hr>
 
-<% @users.each do |u|
-  u.first_name
-  u.last_name
+<% @users.each do |u| %>
+<div>
+  Id: <%= u.id %><br>
+  Email: <%= u.email %><br>
+  First Name:<%= u.first_name %> <br>
+  Last Name:<%= u.last_name %><br>
+  <%= button_to "show", "/users/#{u.id}", method: "get"%>
+  </div>
+  <hr>
  <% end %>
